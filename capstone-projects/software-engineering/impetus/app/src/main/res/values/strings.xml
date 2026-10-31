@@ -1,0 +1,155 @@
+<resources>
+
+    <!-- General App -->
+    <string name="app_name">IMPETUS</string>
+    <string name="welcome">Welcome</string>
+    <string name="not_available">Not available</string>
+    <string name="not_set">Not set</string>
+
+    <!-- Login -->
+    <string name="login_title">Welcome Back!</string>
+    <string name="login_subtitle">Sign in to continue, or create a new account.</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Log In</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="login_footer">Small progress is still progress.</string>
+    <string name="account_created">Account created successfully</string>
+    <string name="username_required">Enter a username</string>
+    <string name="password_required">Enter a password</string>
+    <string name="password_too_short">Password must contain at least 6 characters</string>
+    <string name="invalid_credentials">Invalid username or password</string>
+    <string name="username_exists">Username already exists</string>
+    <string-array name="motivational_quote">No pain, no gain.</string-array>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Impetus</string>
+    <string name="dashboard_greeting">Good Afternoon</string>
+    <string name="profile_description">User profile</string>
+    <string name="profile_initials">MG</string>
+    <string name="current_weight">Current Weight</string>
+    <string name="pounds_short">lb</string>
+    <string name="goal_weight">Goal Weight</string>
+    <string name="remaining_weight">Remaining</string>
+    <string name="todays_mood">Today’s Mood</string>
+    <string name="weekly_change">Weekly Change</string>
+    <string name="tracking_streak">Tracking Streak</string>
+    <string name="recent_weigh_ins">Recent Weigh-Ins</string>
+    <string name="see_all">See All</string>
+    <string name="goal_progress_description">Goal progress</string>
+    <string name="mood_icon_description">Mood indicator</string>
+    <string name="weekly_change_icon_description">Weekly weight change</string>
+    <string name="streak_icon_description">Tracking streak</string>
+    <string name="calendar_icon_description">Weigh-in date</string>
+    <string name="edit_entry">Edit weigh-in entry</string>
+    <string name="delete_entry">Delete weigh-in entry</string>
+    <string name="add_weight_entry">Add weight entry</string>
+    <string name="weight_number_format">%1$.1f</string>
+    <string name="weight_with_unit_format">%1$.1f lb</string>
+    <string name="weight_change_format">%1$+.1f lb</string>
+    <string name="mood_score_format">%1$d/10</string>
+    <string name="percent_format">%1$d%%</string>
+    <string name="unknown_initial">\?</string>
+    <plurals name="tracking_streak_days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+
+    <!-- Goal Reached -->
+    <string name="goal_reached_banner">TARGET GOAL REACHED!</string>
+    <string name="goal_reached_banner_message">You did it. Your target weight has been achieved.</string>
+    <string name="goal_reached_sms">Congratulations! You reached your goal weight of %1$.1f lb.</string>
+
+    <!-- Add / Edit Weigh-In -->
+    <string name="add_weight_title">Add Weigh-In</string>
+    <string name="add_weight_subtitle">Record today’s weight and how you’re feeling.</string>
+    <string name="weight_label">Weight</string>
+    <string name="weight_hint">Enter weight</string>
+    <string name="weight_suffix">lb</string>
+    <string name="date_label">Date</string>
+    <string name="date_hint">Select date</string>
+    <string name="time_label">Time</string>
+    <string name="time_hint">Select time</string>
+    <string name="mood_label">How are you feeling today?</string>
+    <string name="mood_value_default">Mood: 5 out of 10</string>
+    <string name="mood_low">Not great</string>
+    <string name="mood_high">Excellent</string>
+    <string name="notes_label">Notes</string>
+    <string name="notes_hint">Add an optional note</string>
+    <string name="notes_supporting_text">Optional · 200 characters maximum</string>
+    <string name="save_weigh_in">Save Weigh-In</string>
+    <string name="cancel">Cancel</string>
+    <string name="close_screen">Return to dashboard</string>
+    <string name="weigh_in_saved">Weigh-in saved</string>
+    <string name="mood_value_format">Mood: %1$d out of 10</string>
+    <string name="weight_required">Weight is required</string>
+    <string name="invalid_weight">Enter a valid weight</string>
+    <string name="weigh_in_updated">Weigh-in updated</string>
+    <string name="weigh_in_update_failed">Unable to update weigh-in</string>
+    <string name="weigh_in_save_failed">Unable to save weigh-in</string>
+
+    <!-- Progress -->
+    <string name="progress_title">Progress</string>
+    <string name="weight_trend_title">Weight Trend</string>
+    <string name="weight_trend_description">Your recorded weight over time</string>
+    <string name="starting_weight">Starting Weight</string>
+    <string name="total_change">Total Change</string>
+    <string name="chart_empty_state">Add weigh-ins to see your trend</string>
+    <string name="weight_trend">Weight Trend</string>
+    <string name="zero_percent">0%</string>
+
+    <!-- History -->
+    <string name="history_title">History</string>
+    <string name="history_date_time">Date / Time</string>
+    <string name="history_weight">Weight</string>
+    <string name="history_actions">Actions</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Manage your goals, notifications, and account preferences.</string>
+    <string name="settings_goals_section">Goals</string>
+    <string name="goal_weight_setting">Goal Weight</string>
+    <string name="goal_weight_setting_description">Update your target weight</string>
+    <string name="settings_notifications_section">Notifications</string>
+    <string name="goal_notifications_setting">Goal Notifications</string>
+    <string name="goal_notifications_description">Manage SMS alerts for reaching your goal</string>
+    <string name="sms_enabled">Enabled</string>
+    <string name="sms_disabled">Disabled</string>
+    <string name="settings_account_section">Account</string>
+    <string name="account_profile_setting">Profile</string>
+    <string name="account_profile_description">Manage your account information</string>
+    <string name="logout">Log Out</string>
+    <string name="open_goal_notifications">Open goal notification settings</string>
+    <string name="open_goal_weight">Open goal weight settings</string>
+    <string name="open_profile">Open profile settings</string>
+    <string name="save">Save</string>
+    <string name="goal_weight_dialog_title">Goal Weight</string>
+    <string name="goal_weight_dialog_message">Enter your target weight in pounds.</string>
+    <string name="phone_number_hint">Phone number</string>
+    <string name="profile_dialog_title">Profile</string>
+    <string name="profile_dialog_message">Update your account information.</string>
+    <string name="profile_summary_format">%1$s • %2$s</string>
+
+    <!-- SMS Permission -->
+    <string name="sms_permission_title">Goal Notifications</string>
+    <string name="sms_permission_heading">Stay Motivated</string>
+    <string name="sms_permission_description">Impetus can send you a text message when you reach your goal weight.</string>
+    <string name="sms_permission_privacy">SMS access is optional. Denying permission will not prevent you from using the rest of the app.</string>
+    <string name="sms_permission_status">SMS Notification Status</string>
+    <string name="sms_status_not_requested">Permission has not been requested</string>
+    <string name="sms_status_granted">SMS notifications are enabled</string>
+    <string name="sms_status_denied">SMS notifications are disabled</string>
+    <string name="sms_status_unavailable">SMS is unavailable on this device</string>
+    <string name="allow_sms">Allow SMS Notifications</string>
+    <string name="not_now">Not Now</string>
+    <string name="continue_to_app">Continue</string>
+    <string name="sms_icon_description">Text message notification</string>
+    <string name="permission_status_icon">SMS permission status</string>
+
+</resources>

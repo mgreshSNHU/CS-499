@@ -1,0 +1,288 @@
+/* ==========================================================================
+   Design Tokens & Variables
+   ========================================================================== */
+
+:root {
+  --deep: #0b1320;
+  --purple: #a58be9;
+  --purple-light: #bba8f4;
+  --purple-btn: #b19af0;
+  --accent: #8d70d3;
+  --border-dark: rgba(255, 255, 255, 0.13);
+}
+
+/* ==========================================================================
+   Reset & Base Styles
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.8 system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  background-color: var(--deep);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--purple);
+  outline-offset: 3px;
+}
+
+h1 {
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* ==========================================================================
+   Layout & Reusable Utilities
+   ========================================================================== */
+
+.wrap {
+  width: min(1150px, calc(100% - 48px));
+  margin: auto;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  padding: 10px 16px;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+/* ==========================================================================
+   Site Header & Navigation
+   ========================================================================== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(11, 19, 32, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #dce4ef;
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.nav {
+  min-height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  font-weight: 850;
+  font-size: 26px;
+  letter-spacing: -2px;
+}
+
+.brand span {
+  color: var(--accent);
+}
+
+.brand small {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #9daabe;
+  margin-left: 12px;
+}
+
+.nav nav {
+  display: flex;
+  gap: 25px;
+  font-size: 13px;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.github {
+  border: 1px solid #627084;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+.github:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.hero {
+  position: relative;
+  background-color: var(--deep);
+  background-image:
+    url('assets/images/mg_headshot.png'),
+    radial-gradient(circle at 70% 40%, #273650, #101b2c 60%, #0b1320);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    right 55% bottom 0,
+    center;
+  background-position:
+    right max(150px, calc((100% - 1150px) / 2)) bottom 0,
+    center;
+  background-size: auto 540px, cover;
+  color: #ffffff;
+  scroll-margin-top: 100px;
+  min-height: calc(100vh - 78px);
+  display: flex;
+  align-items: center;
+}
+
+.hero-grid {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2.0fr 0.50fr;
+  align-items: center;
+  gap: 65px;
+  min-height: 605px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 4vw, 60px);
+  margin: 22px 0;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: var(--purple-light);
+}
+
+.intro {
+  font-size: 17px;
+  color: #c6cfdd;
+  max-width: 630px;
+}
+
+.button {
+  display: inline-block;
+  background: var(--purple-btn);
+  color: #131b2c;
+  font-weight: 750;
+  font-size: 13px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  margin-top: 18px;
+}
+
+.button:hover {
+  background: #c5b2f5;
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+
+@media (max-width: 850px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+
+  .nav nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 9px;
+  }
+
+  .hero {
+    background-position:
+      center bottom 0,
+      center;
+    background-size: auto 340px, cover;
+    min-height: auto;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 50px;
+    padding-bottom: 330px;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .github {
+    display: none;
+  }
+
+  .brand small {
+    font-size: 8px;
+  }
+
+  .hero {
+    background-size: auto 260px, cover;
+  }
+
+  .hero-grid {
+    padding-bottom: 260px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
+
+/* ==========================================================================
+   Accessibility & User Preferences
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
